@@ -12,4 +12,9 @@
     <string name="title_start_fragment">Welcome to the Games Rating app!</string>
     <string name="text_header_fragment">Click START to start rating :)</string>
     <string name="start">START</string>
+    <string name="title_rating_fragment">Rate the following game from 1 to 5 stars!</string>
+    <string name="btn_to_summary">TO SUMMARY</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="start_over">START OVER</string>
+
 </resources>
