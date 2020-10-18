@@ -3,10 +3,12 @@ package com.example.madlevel3task2
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.browser.customtabs.CustomTabsIntent
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.item_portal.view.*
 
-class PortalAdapter(private val portals: List<Portal>) : RecyclerView.Adapter<PortalAdapter.ViewHolder>(){
+class PortalAdapter(private val portals: List<Portal>, private val clickListener: (Portal) -> Unit)
+    : RecyclerView.Adapter<PortalAdapter.ViewHolder>(){
     /**
      * Creates and returns a ViewHolder object, inflating a standard layout called simple_list_item_1.
      */
@@ -31,9 +33,13 @@ class PortalAdapter(private val portals: List<Portal>) : RecyclerView.Adapter<Po
     }
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        fun databind(reminder: Portal) {
-            itemView.tvTitle.text = reminder.portalTitle
-            itemView.tvUrl.text = reminder.portalUrl
+        fun databind(portal: Portal) {
+            itemView.tvTitle.text = portal.portalTitle
+            itemView.tvUrl.text = portal.portalUrl
+
+            itemView.setOnClickListener {
+                clickListener(portal)
+            }
         }
     }
 
