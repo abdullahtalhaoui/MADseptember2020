@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameFragment">
+
+    <TextView
+        android:id="@+id/tvtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvInstructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/instructions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvtitle" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="409dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvInstructions" />
+
+    <ImageView
+        android:id="@+id/ivComputer"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="48dp"
+        android:src="@drawable/rock"
+        app:layout_constraintBottom_toTopOf="@+id/tvComputer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvWinner"
+        app:layout_constraintVertical_bias="0.909" />
+
+    <ImageView
+        android:id="@+id/ivYou"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginEnd="48dp"
+        android:src="@drawable/scissors"
+        app:layout_constraintBottom_toTopOf="@+id/tvYou"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvWinner"
+        app:layout_constraintVertical_bias="0.909" />
+
+    <TextView
+        android:id="@+id/tvVs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="156dp"
+        android:text="@string/vs"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toStartOf="@+id/ivYou"
+        app:layout_constraintStart_toEndOf="@+id/ivComputer"
+        app:layout_constraintTop_toBottomOf="@+id/tvWinner" />
+
+    <TextView
+        android:id="@+id/tvComputer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="148dp"
+        android:text="@string/computer"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/ivPaper"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvYou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="148dp"
+        android:text="@string/you"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/ivScissors"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivPaper"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/paper"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivRock"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/rock"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ivScissors"
+        app:layout_constraintStart_toEndOf="@+id/ivPaper" />
+
+    <ImageView
+        android:id="@+id/ivScissors"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/scissors"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvWinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="@string/win"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+</androidx.constraintlayout.widget.ConstraintLayout>
