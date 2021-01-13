@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/gameBacklogFragment">
+    <fragment
+        android:id="@+id/gameBacklogFragment"
+        android:name="com.example.madlevel5task2.GameBacklogFragment"
+        android:label="fragment_game_backlog"
+        tools:layout="@layout/fragment_game_backlog"/>
+</navigation>
