@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Capstone Project</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_profiel">Profiel</string>
+    <string name="title_vorige">Vorige</string>
+    <string name="welkom_text">Welkom Samuel, Er staan vandaag 4 oefeningen voor je klaar. Succes!</string>
+    <string name="title_settings">Instellingen</string>
+    <string name="btn_delete_acc" />
+    <string name="title_delete">Account Verwijderen</string>
+    <string name="standard">Standaard instellingen</string>
+    <string name="geavanceerd">Geavanceerde instellingen</string>
+    <string name="oefeningen">Aantal oefeningen per dag</string>
+    <string name="voornaam">Voornaam</string>
+    <string name="achternaam">Achternaam</string>
+    <string name="leeftijd">Leeftijd</string>
+    <string name="gewicht">Gewicht</string>
+    <string name="doel">Doel</string>
+    <string name="opslaan">Opslaan</string>
+    <string name="kg">Kg</string>
+    <string name="jaar">Jaar</string>
+    <string name="title_oefeningen">Oefeningen</string>
+    <string name="oefeningen_aanpassen">Aantal oefeningen aanpassen</string>
+</resources>
