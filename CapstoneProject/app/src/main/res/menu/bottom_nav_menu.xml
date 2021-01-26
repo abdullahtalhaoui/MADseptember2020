@@ -12,7 +12,7 @@
         android:title="@string/title_profiel" />
 
     <item
-        android:id="@+id/navigation_instellingen"
+        android:id="@+id/navigation_settings"
         android:icon="@drawable/instellingen"
         android:title="@string/title_settings" />
 
